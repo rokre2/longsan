@@ -1,0 +1,88 @@
+.chat_box {
+    position: fixed;
+    *position: absolute;
+    top: 50%;
+    right: 0;
+    width: 80px;
+    margin-top: -50px;
+    height: 220px;
+    cursor: pointer;
+    z-index: 5000;
+    background: #ff9400;
+    background: -o-linear-gradient(top, #ff9400, #ff8100);
+    -webkit-box-shadow: 0 4px 20px 0 rgba(225, 79, 0, 0.4);
+    box-shadow: 0 4px 20px 0 rgba(224, 79, 0, 0.4);
+    border-radius: 10px 0 0 10px;
+  }
+  .chat_box .icon-chat {
+    display: inline-block;
+    width: 48px;
+    height: 48px;
+    margin-top: 26px;
+    background: url(assets/phone_hover.png) 0 0 no-repeat;
+  }
+  .chat_box .icon-wechat {
+    display: inline-block;
+    width: 48px;
+    height: 48px;
+    margin-top: 26px;
+    background: url(assets/wechat.png) 0 0 no-repeat;
+  }
+  .chat_box a {
+    display: block;
+    position: relative;
+    height: 110px;
+    color: #fff;
+    font-size: 13px;
+    text-align: center;
+  }
+  .chat_box a:hover {
+    background-color: #ff7c00;
+    background-color: rgba(255, 73, 0, 0.2);
+    border-top-left-radius: 10px;
+  }
+  .chat_box .wechat:hover {
+    border-top-left-radius: 0;
+    border-bottom-left-radius: 10px;
+  }
+  .chat_box .wechat:before {
+    content: "";
+    position: absolute;
+    width: 100%;
+    left: 0;
+    border-top: 1px solid #ff8000;
+  }
+  .wechat_qrcode {
+    display: none;
+    position: fixed;
+    top: 50%;
+    right: 90px;
+    margin-top: -50px;
+    width: 182px;
+    height: 220px;
+    background-color: #fff;
+    z-index: 1000;
+    -webkit-box-shadow: 0 1px 20px 0 rgba(62, 62, 62, 0.25);
+    box-shadow: 0 1px 20px 0 rgba(62, 62, 62, 0.25);
+    border-radius: 8px;
+    border: 1px solid #eee\9;
+  }
+  .wechat_qrcode p {
+    color: #333;
+    font-size: 14px;
+    line-height: 19px;
+    margin-top: 0px;
+  }
+  .wechat_qrcode img {
+    margin: 5px 10px 10px 10px;
+    width: 162px;
+  }
+ /*  @media (-webkit-min-device-pixel-ratio: 2),
+    (min-device-pixel-ratio: 2),
+    only screen and (min--moz-device-pixel-ratio: 2) {
+    .chat_box .icon-chat,
+    .chat_box .icon-wechat {
+      background-image: url(assets/chat_icon@2x-dc45917ea9.png) !important;
+      background-size: 82px 36px !important;
+    }
+  } */
